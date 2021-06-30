@@ -1,41 +1,99 @@
+/* COMMON */
+
 body {
   color: #333;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.4;
   font-family: 'Noto Serif KR', serif;
+  height: 6000px;
 }
-
 img {
   display: block;
 }
-
 a {
   text-decoration: none;
-  display: block;
 }
+.inner {
+  width: 1100px;
+  margin: 0 auto;
+  position: relative;
+}
+.btn {
+  width: 130px;
+  padding: 10px;
+  border: 2px solid #333;
+  border-radius: 4px;
+  color: #333;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+  box-sizing: border-box;
+  display: block;
+  transition: .4s;
+}
+.btn:hover {
+  background-color: #333;
+  color: #fff;
+}
+.btn.btn--reverse {
+  background-color: #333;
+  color: #fff;
+}
+.btn.btn--reverse:hover {
+  background-color: transparent;
+  color: #333;
+}
+.btn.btn--brown {
+  color: #592b18;
+  border-color: #592b18;
+}
+.btn.btn--brown:hover {
+  color: #fff;
+  background-color: #592b18;
+}
+.btn.btn--gold {
+  color: #d9aa8a;
+  border-color: #d9aa8a;
+}
+.btn.btn--gold:hover {
+  color: #fff;
+  background-color: #d9aa8a;
+}
+.btn.btn--white {
+  color: #fff;
+  border-color: #fff;
+}
+.btn.btn--white:hover {
+  color: #333;
+  background-color: #fff;
+}
+
 
 /* HEADER */
 
 header {
-  background-color: #fff;
+  width: 100%;
+  border-bottom: 1px solid #c8c8c8;
+  background-color: #faebd7;
+  position: fixed;
+  top: 0;
+  z-index: 9;
 }
 header .inner {
-  width: 1100px;
   height: 120px;
-  margin: 0 auto;
-  background-color: #faebd7;
-  position: relative;
 }
 header .logo {
-  height: 100px;
+  height: 75px;
   position: absolute;
   top: 0;
   bottom: 0;
+  left: 0;
   margin: auto;
   /* display: none; */
 }
-header img {
+header .logo img {
   width: 100px;
   height: 100px;
   position: absolute;
@@ -183,4 +241,54 @@ header .main-menu .item .item__contents .contents__menu > ul .contents__box a {
 header .main-menu .item .item__contents .contents__menu > ul .contents__box a:hover {
   background-color: #ffe4c4;
   color: #d2691e;
+}
+header .badges {
+  background-color: pink;
+  position: fixed;
+  top: 170px;
+  right: 50px;
+}
+header .badges .badge {
+  box-sizing: border-box;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, .15);
+  cursor: pointer;
+  overflow: hidden;
+  max-width: 200px;
+  max-height: 400px;
+  background-position: center;
+}
+
+
+/* VISUAL */
+
+.visual {
+  margin-top: 120px;
+  background-image: url('../images/visual_bg.jpg');
+  background-position: center;
+}
+.visual .inner {
+  height: 600px;
+  background-repeat:repeat;
+  /* background-color: orange; */
+}
+.visual .title {
+  display: block;
+
+}
+.visual .title .btn {
+  position: absolute;
+  bottom: 100px;
+  left: 280px;
+}
+.visual .gift.image {
+  position: absolute;
+  top: 60px;
+}
+.visual .text {
+  position: absolute;
+  font-size: 30px;
+  top: 0;
+  left: 0;
+  padding: 10px;
+  color: #333;
 }
