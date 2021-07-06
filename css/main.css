@@ -4,8 +4,8 @@ body {
   color: #333;
   font-size: 16px;
   font-weight: 400;
-  line-height: 1.4;
   font-family: 'Noto Serif KR', serif;
+  line-height: 1.4;
   height: 6000px;
 }
 img {
@@ -21,12 +21,12 @@ a {
 }
 .btn {
   width: 130px;
-  padding: 10px;
   border: 2px solid #333;
   border-radius: 4px;
-  color: #333;
+  padding: 10px;
   font-size: 16px;
   font-weight: 700;
+  color: #333;
   text-align: center;
   cursor: pointer;
   box-sizing: border-box;
@@ -75,9 +75,9 @@ a {
 
 header {
   width: 100%;
-  border-bottom: 1px solid #c8c8c8;
-  background-color: #faebd7;
   position: fixed;
+  background-color: #faebd7;
+  border-bottom: 1px solid #c8c8c8;
   top: 0;
   z-index: 9;
 }
@@ -86,11 +86,11 @@ header .inner {
 }
 header .logo {
   height: 75px;
-  position: absolute;
   top: 0;
   bottom: 0;
-  left: 0;
   margin: auto;
+  /* left: 0; */
+  position: absolute;
   /* display: none; */
 }
 header .logo img {
@@ -104,10 +104,10 @@ header .logo img {
 }
 
 header .sub-menu {
-  display: flex;
   position: absolute;
   top: 10px;
   right: 0;
+  display: flex;
 }
 header .sub-menu ul.menu {
   display: flex;
@@ -118,20 +118,20 @@ header .sub-menu ul.menu  li {
 header .sub-menu ul.menu  li::before {
   content: "";
   border-right: 1px solid rgb(215, 247, 240);
+  height: 12px;
+  position: absolute;
   top: 0;
   bottom: 0;
   margin: auto;
-  position: absolute;
-  height: 12px;
 }
 header .sub-menu ul.menu  li:first-child::before {
   display: none;
 }
 header .sub-menu ul.menu  li a {
-  font-size: 12px;
-  padding: 11px 16px;
   display: block;
+  padding: 11px 16px;
   color: #a52a2a;
+  font-size: 12px;
 }
 header .sub-menu ul.menu  li a:hover {
   color: #333;
@@ -213,6 +213,7 @@ header .main-menu .item:hover .item__contents {
 header .main-menu .item .item__contents .contents__menu {
   /* background-color: red; */
   height: 50px;
+  position: relative;
 }
 header .main-menu .item .item__contents .contents__menu > ul {
   display: flex;
@@ -243,7 +244,6 @@ header .main-menu .item .item__contents .contents__menu > ul .contents__box a:ho
   color: #d2691e;
 }
 header .badges {
-  background-color: pink;
   position: fixed;
   top: 170px;
   right: 50px;
@@ -268,10 +268,10 @@ header .badges .badge {
 }
 .visual .inner {
   height: 600px;
-  background-repeat:repeat;
   /* background-color: orange; */
 }
 .visual .title {
+  position: absolute;
   display: block;
 
 }
@@ -344,6 +344,15 @@ header .badges .badge {
   flex-grow: 1;
   height: 62px;
 }
+.notice .notice-line .notice-lfet .swiper-container .swiper-slide {
+  display: flex;
+  height: 62px;
+  margin-left: 20px;
+  align-items: center;
+}
+.notice .notice-line .notice-lfet .swiper-container .swiper-slide a {
+  color: #333;
+}
 .notice .notice-line .notice-lfet .notice__more {
   width: 62px;
   height: 62px;
@@ -377,4 +386,34 @@ header .badges .badge {
 }
 .notice .notice-line .notice-right .material-icons {
   font-size: 30px;
+}
+.notice .promotion {
+  height: 693px;
+  background-color: #f6f5ef;
+  position: relative;
+  
+}
+.notice .promotion .swiper-container {
+  width: calc(819px * 3 + 20px);
+  height: 553px;
+  text-align: center;
+  font-size: 200px;
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  margin-left: calc((819px * 3 + 20px) / -2);
+}
+.notice .promotion .swiper-slide {
+  opacity: .5;
+}
+.notice .promotion .swiper-slide-active {
+  opacity: 1;
+  transition: .6s;
+}
+.notice .promotion .swiper-slide .btn {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
