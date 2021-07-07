@@ -417,3 +417,49 @@ header .badges .badge {
   right: 0;
   margin: auto;
 }
+.notice .promotion .swiper-pagination {
+  bottom: 40px;
+  left: 0;
+  right: 0;
+}
+.notice .promotion .swiper-pagination-bullet {
+  background-image: url('../images/promotion_slide_pager.png');
+  width: 12px;
+  height: 12px;
+  margin-right: 6px;
+  background-color: transparent;
+  outline: none;
+}
+.notice .promotion .swiper-pagination-bullet:last-child {
+  margin-right: 0;
+}
+.notice .promotion .swiper-pagination-bullet-active {
+  background-image: url('../images/promotion_slide_pager_on.png');
+}
+.notice .promotion .swiper-prev,
+.notice .promotion .swiper-next {
+  width: 42px;
+  height: 42px;
+  position: absolute;
+  border: 2px solid #333;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 1;
+  top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.notice .promotion .swiper-prev:hover,
+.notice .promotion .swiper-next:hover {
+  background-color: #333;
+  color: #fff;
+}
+.notice .promotion .swiper-prev {
+  left: 50%;
+  margin-left: -480px;
+}
+.notice .promotion .swiper-next {
+  right: 50%;
+  margin-right: -480px;
+}
